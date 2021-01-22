@@ -73,6 +73,7 @@ def Main(dir_path):
         if len(files) == 0:
             count320 = int(count320/2)
             otherCount = int(otherCount/2)
+            wavCount = int(wavCount/2)
             nonWav = count320 + otherCount
             print("Lossless files found: {wav} \nMP3 files found: {mp3}\nOf which MP3 files {count320} are over 320kpbs".format(wav=wavCount, mp3=nonWav, count320=count320))
             break
